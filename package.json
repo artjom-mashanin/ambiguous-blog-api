@@ -1,7 +1,7 @@
 {
   "name": "blog-api",
   "version": "1.0.0",
-  "description": "A simple blog API built with Express.js, Supabase, and Prisma",
+  "description": "A simple blog API built with Express.js, PostgreSQL, and Prisma",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -11,7 +11,6 @@
     "blog",
     "api",
     "express",
-    "supabase",
     "prisma"
   ],
   "author": "",
