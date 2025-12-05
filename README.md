@@ -165,13 +165,16 @@ All error responses follow this format:
 | `NOT_FOUND`        | 404         | Resource not found             |
 | `INTERNAL_ERROR`   | 500         | Unexpected server error        |
 
+## Local development environment
+
+For local development, we will use local postgresql database setup as Docker Container using Docker Compose configuration.
+We will run the database in a docker container, while the our backend api will be running locally on the computer (not in docker)
+
+We will not have data seeds and we will start with an empty database
+
 ## Database
 
 For database we will be using Postgresql 17 with latest availalbe version of Prisma ORM
-
-### Local database
-
-For local development, we will use local postgresql database setup as Docker Container using Docker Compose configuration.
 
 ### Database schema
 
