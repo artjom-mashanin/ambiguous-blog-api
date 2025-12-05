@@ -1,12 +1,12 @@
 # Blog API
 
-A RESTful blog API built with Express.js, designed to be backed by **Supabase PostgreSQL** using **Prisma ORM**.
+A RESTful blog API built with Express.js, designed to be backed by **PostgreSQL** using **Prisma ORM**.
 
 ## Tech Stack
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
-- **Database:** Supabase (PostgreSQL)
+- **Database:** PostgreSQL
 - **ORM:** Prisma
 - **Authentication:** JWT (planned)
 
@@ -15,14 +15,13 @@ A RESTful blog API built with Express.js, designed to be backed by **Supabase Po
 ### Prerequisites
 
 - Node.js 18+
-- Supabase account (for database)
 
 ### Installation
 
 ```bash
 npm install
 cp .env.example .env
-# Update .env with your Supabase credentials
+# Update .env with your db creadentials
 npm run dev
 ```
 
@@ -213,7 +212,7 @@ enum PostStatus {
   - Login endpoint: `POST /api/auth/login`
   - Register endpoint: `POST /api/auth/register`
   - Protected routes for create/update/delete operations
-- [ ] **Prisma Integration:** Connect to Supabase PostgreSQL
+- [ ] **Prisma Integration:** Connect to PostgreSQL
 - [ ] **Pagination:** Cursor-based pagination for list endpoints
 - [ ] **Search:** Full-text search on posts
 
@@ -221,12 +220,12 @@ enum PostStatus {
 
 See `.env.example` for required environment variables:
 
-| Variable       | Description                           | Required                   |
-| -------------- | ------------------------------------- | -------------------------- |
-| `PORT`         | Server port (default: 3000)           | No                         |
-| `DATABASE_URL` | Supabase PostgreSQL connection string | Yes (for production)       |
-| `JWT_SECRET`   | Secret for signing JWT tokens         | Yes (when auth is enabled) |
-| `JWT_EXPIRY`   | Token expiration time (default: 24h)  | No                         |
+| Variable       | Description                          | Required                   |
+| -------------- | ------------------------------------ | -------------------------- |
+| `PORT`         | Server port (default: 3000)          | No                         |
+| `DATABASE_URL` | PostgreSQL connection string         | Yes (for production)       |
+| `JWT_SECRET`   | Secret for signing JWT tokens        | Yes (when auth is enabled) |
+| `JWT_EXPIRY`   | Token expiration time (default: 24h) | No                         |
 
 ## License
 
