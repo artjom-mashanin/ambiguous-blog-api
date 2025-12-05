@@ -167,6 +167,8 @@ All error responses follow this format:
 
 ## Database
 
+For database we will be using Postgresql 17 with latest availalbe version of Prisma ORM
+
 ### Local database
 
 For local development, we will use local postgresql database setup as Docker Container using Docker Compose configuration.
