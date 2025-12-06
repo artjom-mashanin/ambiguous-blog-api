@@ -169,7 +169,7 @@ All error responses follow this format:
 For local development, we will use local postgresql database setup as Docker Container using Docker Compose configuration.
 We will run the database in a docker container, while the our backend api will be running locally on the computer (not in docker)
 
-We will not have data seeds and we will start with an empty database
+We do not need to have any seed data.
 
 ## Database
 
