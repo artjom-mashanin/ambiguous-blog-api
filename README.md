@@ -173,7 +173,7 @@ We will not have data seeds and we will start with an empty database
 
 ## Database
 
-For database we will be using Postgresql 17 with latest availalbe version of Prisma ORM
+For database we will be using Postgresql 17 with Prisma ORM version 6.16.0
 
 ### Database schema
 
@@ -223,7 +223,7 @@ See `.env.example` for required environment variables:
 | Variable       | Description                          | Required                   |
 | -------------- | ------------------------------------ | -------------------------- |
 | `PORT`         | Server port (default: 3000)          | No                         |
-| `DATABASE_URL` | PostgreSQL connection string         | Yes (for production)       |
+| `DATABASE_URL` | PostgreSQL connection string         | Yes                        |
 | `JWT_SECRET`   | Secret for signing JWT tokens        | Yes (when auth is enabled) |
 | `JWT_EXPIRY`   | Token expiration time (default: 24h) | No                         |
 
